@@ -46,7 +46,7 @@ li {
 li a {
   color: var(--light-slate);
   text-decoration: none;
-  font-size: 15px;
+  font-size: 17px;
   transition: color 0.3s ease;
   font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
 }
@@ -79,7 +79,7 @@ li a:hover {
   color: var(--green);
   position: relative;
   display: block;
-  padding: 10px;
+  padding: 12px;
 }
 
 .CV:hover {
@@ -89,3 +89,68 @@ li a:hover {
 .CV a:hover{
   color: var(--nav);
 }
+
+/*MAIN*/
+main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  width: 100%;
+  height: 85vh;
+  box-sizing: border-box;
+}
+
+/*SECTION 1*/
+.main-hero {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  flex: 1;
+  max-width: 75%;
+}
+
+.name-text {
+  color: var(--green);
+  margin-bottom: 15px;
+  font-size: 35px;
+  font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+}
+
+.name {
+  color: var(--light-slate);
+  font-size: 100px;
+}
+
+.build-text {
+  color: var(--dark-slate);
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.description {
+  max-width: 50%;
+  color: var(--dark-slate);
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.contact-btn {
+  border: 2px solid var(--green);
+  border-radius: 6px;
+  padding: 20px;
+  text-decoration: none;
+  text-align: center;
+  max-width: 250px;
+  color: var(--green);
+  transition: border 0.3s ease, color 0.3s ease;
+}
+
+.contact-btn:hover {
+  color: var(--light-slate);
+  border-color: var(--light-slate);
+}
+
+
+
+/*SOCIALS*/
