@@ -91,7 +91,7 @@ li a:hover {
 }
 
 /*MAIN*/
-main {
+.home {
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
@@ -172,4 +172,63 @@ main {
 
 .icons:hover {
   color: var(--green);
+}
+
+/*PROJECTS*/
+
+.projects {
+  height: auto;
+  width: 75%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 30px;
+}
+
+.project {
+  border: 5px solid var(--lightest-navy);
+  border-radius: 8px;
+  background-color: var(--lightest-navy);
+  width: 100%;
+  height: 50vh;
+}
+
+.project-img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 75%;
+  background-image: url(/img/pngtree-white-spot-float-image_1256405.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.project-img::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--green);
+  opacity: 0.4;
+  transition: opacity 0.4s ease;
+}
+
+.project-img:hover::after {
+  opacity: 0;
+}
+
+.project-name {
+  padding-top: 10px;
+  color: var(--green);
+  font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;;
+}
+
+.project-text {
+  width: 100%;
+  height: 25%;
+  padding-top: 15px;
+  font-size: 15px;
+  font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;;
+  color: var(--lightest-slate);
 }
