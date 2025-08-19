@@ -289,6 +289,8 @@ li a:hover {
   border: none;
 }
 
+/*CONTACT*/
+
 .contact{
   width: 50%;
   margin: 250px auto auto auto;
@@ -332,4 +334,25 @@ li a:hover {
 .mail-btn:hover{
   color: var(--light-slate);
   border-color: var(--light-slate);
+}
+
+/*FOOTER*/
+footer{
+  width: 50%;
+  margin: 150px auto auto auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright{
+  color: var(--lightest-navy);
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+.copyright:hover{
+  color: var(--green);
 }
