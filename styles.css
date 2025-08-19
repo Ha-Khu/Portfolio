@@ -288,3 +288,48 @@ li a:hover {
 .aboutme-img-container:hover{
   border: none;
 }
+
+.contact{
+  width: 50%;
+  margin: 250px auto auto auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-header{
+  color: var(--green);
+  font-size: 38px;
+  margin-bottom: 22px;
+  font-family: 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+}
+
+.contact-text{
+  color: var(--slate);
+  font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+  font-size: 22px;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-bottom: 22px;
+  width: 75%;
+}
+
+.mail-btn{
+  border: 2px solid var(--green);
+  border-radius: 6px;
+  width: 200px;
+  padding: 20px;
+  text-decoration: none;
+  text-align: center;
+  color: var(--green);
+  margin-bottom: 50px;
+  transition: border 0.3s ease, color 0.3s ease;
+}
+
+.mail-btn:hover{
+  color: var(--light-slate);
+  border-color: var(--light-slate);
+}
