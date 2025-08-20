@@ -1,3 +1,4 @@
+/*NAVBAR SCROLL*/
 let lastScroll = 0;
 let navbar = document.getElementById("navbar");
 
@@ -11,4 +12,19 @@ window.addEventListener("scroll", () =>{
     }
   }
   lastScroll = currentScroll;
+})
+
+
+/*FADE IN ANIMATION*/
+
+let sections = document.querySelectorAll(".fade-section");
+
+window.addEventListener("scroll", () =>{
+  sections.forEach(section =>{
+    let currentSection = section.getBoundingClientRect().top
+    let currentHeight = window.innerHeight;
+    if(currentSection < currentHeight - 100){
+      section.classList.add("visible");
+    }
+  })
 })
