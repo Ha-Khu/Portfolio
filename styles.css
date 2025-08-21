@@ -97,6 +97,47 @@ li a:hover {
   color: var(--nav);
 }
 
+/*DROPDOWN MENU*/
+nav .hamburger{
+  color: var(--green);
+  font-size: 2.5rem;
+  cursor: pointer;
+  margin-right: 2.5rem;
+  display: none;
+  margin-top: 25px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 100px;
+  height: 0;
+  width: 85%;
+  margin: 0 auto;
+  background: var(--dark-slate);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+.dropdown-menu.show {
+  height: 275px;
+}
+
+.dropdown-menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-menu .CV{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 /*MAIN*/
 .home {
   display: flex;
@@ -375,4 +416,27 @@ footer{
 .fade-section.visible{
   opacity: 1;
   transform: translateY(0);
+}
+
+/*RESPONSIVE*/
+
+@media only screen and (max-width: 768px){
+  /*NAVBAR*/
+  nav ul,
+  nav .CV{
+    display: none;
+  }
+
+  #navbar{
+    background: none;
+    backdrop-filter: none;
+  }
+
+  nav .hamburger{
+    display: block;
+  }
+
+  .dropdown-menu {
+    display: block;
+  }
 }

@@ -28,3 +28,12 @@ window.addEventListener("scroll", () =>{
     }
   })
 })
+
+
+/*NAVBAR RESPONSIVE*/
+
+const navLinks = document.querySelector(".dropdown-menu");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+})
