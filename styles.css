@@ -6,6 +6,13 @@
   scroll-behavior: smooth;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
 /*COLORS*/
 :root {
   --dark-navy: #020c1b;
@@ -20,8 +27,12 @@
   --green: #64ffda;
 }
 
-body {
+html, body {
   background-color: var(--navy);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 header {
@@ -246,7 +257,7 @@ nav .hamburger{
   display: block;
   width: 100%;
   height: 75%;
-  background-image: url(/img/pngtree-white-spot-float-image_1256405.jpg);
+  background-image: url(img/pngtree-white-spot-float-image_1256405.jpg);
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -318,7 +329,7 @@ nav .hamburger{
   display: block;
   width: 100%;
   height: 100%;
-  background-image: url(/img/pngtree-white-spot-float-image_1256405.jpg);
+  background-image: url(img/pngtree-white-spot-float-image_1256405.jpg);
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -421,15 +432,15 @@ footer{
 /*RESPONSIVE*/
 
 @media only screen and (max-width: 768px){
+
+  html, body {
+  background-color: var(--navy);
+  overflow-x: hidden;
+}
   /*NAVBAR*/
   nav ul,
   nav .CV{
     display: none;
-  }
-
-  #navbar{
-    background: none;
-    backdrop-filter: none;
   }
 
   nav .hamburger{
@@ -439,4 +450,51 @@ footer{
   .dropdown-menu {
     display: block;
   }
+
+
+  /*HOME*/
+
+  .home {
+  display: flex;
+  margin: 50px 0 50px 25px;
+  max-width: 90%;
+  height: auto;
+  }
+
+  .main-hero {
+    max-width: 100%;
+  }
+
+  .name-text{
+    font-size: 30px;
+  }
+
+  .name{
+    font-size: 60px;
+    margin-bottom: 15px;
+  }
+
+  .build-text{
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .description{
+    font-size: 20px;
+    text-align: left;
+    max-width: 75%;
+  }
+
+  /*SOCIALS*/
+
+  .socials{
+    display: none;
+  }
+
+  /*PROJECTS*/
+
+  .projects{
+    grid-template-columns: 100%;
+  }
+
 }
