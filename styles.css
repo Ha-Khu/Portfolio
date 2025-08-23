@@ -431,6 +431,36 @@ footer{
 
 /*RESPONSIVE*/
 
+@media only screen and (max-width: 1230px){
+
+  .aboutme{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutme-text-container{
+    width: 80%;
+    height: auto;
+  }
+
+  .aboutme-img-container{
+    width: 50%;
+    height: 40vh;
+    margin-top: 40px;
+  }
+
+  .aboutme-text{
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+  }
+
+}
+
 @media only screen and (max-width: 768px){
 
   html, body {
@@ -451,6 +481,12 @@ footer{
     display: block;
   }
 
+  .dropdown-socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
 
   /*HOME*/
 
@@ -497,4 +533,42 @@ footer{
     grid-template-columns: 100%;
   }
 
+  /*ABOUT ME*/
+
+  .aboutme{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutme-text-container{
+    width: 80%;
+    height: auto;
+  }
+
+  .aboutme-img-container{
+    width: 60%;
+    height: 40vh;
+    margin-top: 40px;
+  }
+
+  .aboutme-text{
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+  }
+
+  /*CONTACT*/
+  .contact{
+    width: 100%;
+    margin-top: 150px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
