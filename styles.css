@@ -244,6 +244,12 @@ nav .hamburger{
   gap: 30px;
 }
 
+.projects-header {
+  margin: 50px 0 25px 280px;
+  font-style: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+  color: var(--green);
+}
+
 .project {
   border: 5px solid var(--lightest-navy);
   border-radius: 8px;
@@ -295,10 +301,16 @@ nav .hamburger{
 /*ABOUT ME*/
 .aboutme{
   width: 65%;
-  margin: 250px auto auto auto;
+  margin: 0 auto;
   height: auto;
   display: flex;
   gap: 50px;
+}
+
+.aboutme-header{
+  margin: 250px 0 25px 325px;
+  font-style: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+  color: var(--green);
 }
 
 .aboutme-text-container{
@@ -533,15 +545,31 @@ footer{
     grid-template-columns: 100%;
   }
 
+  .projects-header{
+    margin: 150px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+  }
+
   /*ABOUT ME*/
 
   .aboutme{
-    margin-top: 100px;
     width: 100%;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .aboutme-header{
+    margin: 100px 0 25px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
   }
 
   .aboutme-text-container{
