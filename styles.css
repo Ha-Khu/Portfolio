@@ -255,33 +255,34 @@ nav .hamburger{
   border-radius: 8px;
   background-color: var(--lightest-navy);
   width: 100%;
-  height: 50vh;
+  height: auto;
+  padding-bottom: 15px;
 }
 
 .project-img {
   position: relative;
   display: block;
   width: 100%;
-  height: 75%;
+  height: 350px;
   background-size: cover;
   background-position: center;
   overflow: hidden;
 }
 
 .project-img.img-1 {
-  background-image: url(img/todo.png);
+  background-image: url(img/workout-app.png);
 }
 
 .project-img.img-2 {
-  background-image: url(img/Weather-app.png);
+  background-image: url(img/Covid-19_dashboard.png);
 }
 
 .project-img.img-3 {
-  background-image: url(img/pomodoro.png);
+  background-image: url(img/tasks\ \(1\).png)
 }
 
 .project-img.img-4 {
-  background-image: url(img/Dino-game.png);
+  background-image: url(img/mathieu-stern-tv7GF92ZWvs-unsplash.jpg);
 }
 
 .project-img::after {
@@ -306,11 +307,11 @@ nav .hamburger{
 
 .project-text {
   width: 100%;
-  height: 25%;
   padding-top: 15px;
   font-size: 15px;
   font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
   color: var(--lightest-slate);
+  overflow: visible;
 }
 
 /*ABOUT ME*/
@@ -486,6 +487,10 @@ footer{
     letter-spacing: 0.5px;
   }
 
+    .project-img {
+    height: 275px;
+  }
+
 }
 
 @media only screen and (max-width: 768px){
@@ -558,6 +563,20 @@ footer{
 
   .projects{
     grid-template-columns: 100%;
+  }
+
+  .project {
+    height: auto;
+    min-height: 50vh;
+    padding-bottom: 15px;
+  }
+
+  .project-name {
+    padding-left: 10px;
+  }
+
+  .project-text {
+    padding: 10px;
   }
 
   .projects-header{
