@@ -105,7 +105,7 @@ li a:hover {
 }
 
 .CV a:hover{
-  color: var(--nav);
+  color: var(--navy);
 }
 
 /*DROPDOWN MENU*/
@@ -246,7 +246,7 @@ nav .hamburger{
 
 .projects-header {
   margin: 50px 0 25px 280px;
-  font-style: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+  font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
   color: var(--green);
 }
 
@@ -325,7 +325,7 @@ nav .hamburger{
 
 .aboutme-header{
   margin: 250px 0 25px 325px;
-  font-style: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+  font-family: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
   color: var(--green);
 }
 
